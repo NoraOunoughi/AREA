@@ -1,0 +1,52 @@
+{
+    "action": [
+        {
+            "name": "If temperature is cold",
+            "tokenName": "",
+            "displayOnlyPages": ["meteo"]
+        },
+        {
+            "name": "If the weather is clear",
+            "tokenName": "",
+            "displayOnlyPages": ["meteo"]
+        },
+        {
+            "name": "If it is raining",
+            "tokenName": "",
+            "displayOnlyPages": ["meteo"]
+        },
+        {
+            "name": "If artist post new album",
+            "tokenName": "spotifyToken",
+            "displayOnlyPages": ["spotify"]
+        },
+        {
+            "name": "If user create new repo",
+            "tokenName": "githubToken",
+            "displayOnlyPages": ["gitHub"]
+        }
+    ],
+
+    "reaction": [
+        {
+            "name": "Send email",
+            "tokenName": "",
+            "displayOnAllPages": true
+        },
+        {
+            "name": "Send sms",
+            "tokenName": "",
+            "displayOnAllPages": true
+        },
+        {
+            "name": "Send app notifications",
+            "tokenName": "",
+            "displayOnAllPages": true
+        },
+        {
+            "name": "Send gmail",
+            "tokenName": "googleToken",
+            "displayOnlyPages": ["email", "google"]
+        }
+    ]
+}

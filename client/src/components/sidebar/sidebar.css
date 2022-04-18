@@ -1,0 +1,225 @@
+.sidebar {
+    flex: 1;
+    height: calc(100vh - 50px);
+    background-color: rgba(101, 101, 101, 1);
+    box-shadow: 10px 0 5px -2px #888;
+    top: 50px;
+}
+
+.sidebarWrapper {
+    padding: 20px;
+}
+
+.sidebarMenu {
+    margin-bottom: 10px;
+    font-family: Bebas;
+    letter-spacing: 2px;
+}
+
+.sidebarTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.sidebarTitle:hover {
+    color: #000000;
+}
+
+.sidebarList {
+    list-style: none;
+    padding: 5px;
+}
+
+/* Home */
+.sidebarListItemHome {
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #ECECEC;
+    transition: 0.4s;
+}
+
+.sidebarListItemHome:hover {
+    background-color: hsla(0, 0%, 93%, 0.45);
+    color: #ffd700;
+}
+
+/* Youtube */
+.sidebarListItemYoutube {
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #ECECEC;
+    transition: 0.4s;
+}
+
+.sidebarListItemYoutube:hover {
+    background-color: hsla(0, 0%, 93%, 0.45);
+    color: #C4302B;
+}
+
+/* Discord */
+.sidebarListItemDiscord {
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #ECECEC;
+    transition: 0.4s;
+}
+
+.sidebarListItemDiscord:hover {
+    background-color: hsla(0, 0%, 93%, 0.45);
+    color: #7289da;
+}
+
+/* Spotify */
+.sidebarListItemSpotify {
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #ECECEC;
+    transition: 0.4s;
+}
+
+.sidebarListItemSpotify:hover {
+    background-color: hsla(0, 0%, 93%, 0.45);
+    color: #679215;
+}
+
+/* Slack */
+.sidebarListItemSlack {
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #ECECEC;
+    transition: 0.4s;
+}
+
+.sidebarListItemSlack:hover {
+    background-color: hsla(0, 0%, 93%, 0.45);
+    color: #4A154B;;
+}
+
+/* Gmail */
+.sidebarListItemGmail {
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #ECECEC;
+    transition: 0.4s;
+}
+
+.sidebarListItemGmail:hover {
+    background-color: hsla(0, 0%, 93%, 0.45);
+    color: #db4a39;
+}
+
+/* Weather */
+.sidebarListItemWeather {
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #ECECEC;
+    transition: 0.4s;
+}
+
+.sidebarListItemWeather:hover {
+    background-color: hsla(0, 0%, 93%, 0.45);
+    color: #3b84bd;
+}
+
+/* Sendgrid */
+.sidebarListItemSendgrid {
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #ECECEC;
+    transition: 0.4s;
+}
+
+.sidebarListItemSendgrid:hover {
+    background-color: hsla(0, 0%, 93%, 0.45);
+    color: #1A82e2;
+}
+
+/* Github */
+.sidebarListItemGithub {
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #ECECEC;
+    transition: 0.4s;
+}
+
+.sidebarListItemGithub:hover {
+    background-color: hsla(0, 0%, 93%, 0.45);
+    color: #171515;
+}
+
+.sidebarIcon {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.sidebarIcon {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.sidebarShadow {
+    height: 1px;
+    box-shadow: 1px 1px 2px #bbb;
+    margin-bottom: 20px;
+}
+
+.arrowRight {
+    color: white;
+    position: absolute;
+    left: 8%;
+    transition: 0.4s;
+}
+
+.arrowRight:hover {
+    color: #ffd700;
+}
+
+.arrowDown {
+    color: white;
+    position: absolute;
+    left: 8%;
+    transition: 0.4s;
+}
+
+.arrowDown:hover {
+    color: #ffd700;
+}

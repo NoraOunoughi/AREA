@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "HP";
+  src: local("HP"), url(../../assets/potter/HP_Font.TTF) format("opentype");
+}
+
+.githubArea {
+  flex: 6;
+  background-color: #ececec;
+}
+
+.githubArea-container {
+  background: url("https://cdn.wallpapersafari.com/47/3/tn8LUa.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.githubArea-containerButton {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.githubArea-.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.githubArea-btn {
+  background-color: #46464c;
+  color: white;
+  padding: 10px 16px 10px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.githubArea-btn:hover,
+.githubArea-btn:focus {
+  background-color: #80818A;
+}
+
+.githubArea-btnPattern {
+  text-align: center;
+  background-color: #b2babb;
+  color: black;
+  cursor: initial;
+  font-size: 14px;
+}
+
+.githubArea-btnContent {
+  background: white;
+  color: color;
+  cursor: pointer;
+  padding: 10px 2px 10px 2px;
+  transition: 0.3s;
+}
+
+.githubArea-btnContent:hover {
+  background-color: #ddd;
+}
+
+.githubArea-AreaListContainer {
+  border: 2px solid #242424;
+  border-radius:10px;
+  padding: 10px;
+  background-color: #D3D3D3;
+  margin-left: 2px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: inline-block;
+}
+
+.githubArea-Title {
+  font-size: 20px;
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+.githubArea-AreaListContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.githubArea-searchButton {
+  outline: none;
+  padding: 10px 60px;
+  border: none;
+  margin-bottom: 20px;
+  background: rgba(101, 101, 101, 0.85);
+  color: white;
+  border: 1px solid rgba(101, 101, 101, 0.85);
+}
+.githubArea-searchButton:hover {
+  border: 1px solid #fbbc05;
+}
+
+/* Register button */
+.githubArea-sendButton {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.githubArea-sendButton:hover {
+  background: #fbbc05;
+}
+
+.githubArea-newArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.githubArea-newAreaContainer {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+}
+
+.githubArea-newAreaContent {
+  background-color: #46464C;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  margin-right: 4px;
+}
+
+.githubArea-newAreaDelete {
+  background-color: #FEF7F9;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: inline-block;
+  border: 2px solid #242424;
+  border-radius: 10px;
+}
+
+.githubArea-newAreaDelete:hover {
+  background-color: #E2AF9C;
+}
+
+.githubArea-AreaTest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.githubArea-Area {
+  background-color: #A5A5AF;
+  border: 2px solid #242424;
+  border-radius: 10px;
+  padding: 20px 60px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.githubArea-titleButton {
+  outline: none;
+  padding: 10px 60px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  background: rgba(70, 70, 76, 0.85);
+  color: white;
+  border: 1px solid rgba(70, 70, 76, 0.85);
+}
+.githubArea-titleButton:hover {
+  border: 1px solid #fbbc05;
+}
+
+.githubArea-Title {
+  font-size: 30px;
+  font-family: HP;
+  text-shadow: 2px 2px 2px black, 2px 2px 2px black, 2px 2px 2px black,
+  2px 2px 2px black, 2px 2px 2px black, 2px 2px 2px black, 2px 2px 2px black;
+  color: #ffb41e;
+  margin-bottom: 14px;
+}
+
+.githubArea-span {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+}

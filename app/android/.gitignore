@@ -1,0 +1,16 @@
+gradle-wrapper.jar
+/.gradle
+/captures/
+/gradlew
+/gradlew.bat
+/local.properties
+GeneratedPluginRegistrant.java
+
+# Remember to never publicly share your keystore.
+# See https://flutter.dev/docs/deployment/android#reference-the-keystore-from-the-app
+# Ignore all keystore informations
+
+# Added 24/02/2022 Pierre DALLARA / Temporaly share keystore and key.jks for group Epitech Area
+# key.properties
+# **/*.keystore
+# **/*.jks

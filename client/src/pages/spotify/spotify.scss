@@ -1,0 +1,155 @@
+
+.spotify {
+  flex: 6;
+  background-color: #ececec;
+}
+
+.spotify-container {
+  background: url("https://i.pinimg.com/originals/9f/54/62/9f54621f5dd80992694c320a70dc59ee.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.spotify-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myButton-spotify {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.myButton-spotify:hover {
+  color: #1db954;
+  border: 1px solid #1db954;
+}
+
+.spotify-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: 0;
+  margin-right: 10px;
+}
+
+.widget-container{
+  border: solid 1px;
+  max-width: 700px;
+}
+
+$color3: #B8B8B8;
+
+.Area-card {
+
+  margin:  20px 5px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 800px;
+  height: 270px;
+  background-image: url("https://media.istockphoto.com/photos/hexagon-pattern-dark-gray-minimalist-abstract-background-picture-id1204879442?k=20&m=1204879442&s=170667a&w=0&h=zQj0anTKGQ7GRu_KgCP065Z6pNL_OSbly8AeAuuYbtc=");
+  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+  animation: appear 500ms ease-out forwards;
+  p {
+      position: absolute;
+      font-family: 'Lato', sans-serif;
+      font-weight:300;
+      font-size:28px;
+      color: lighten($color3, 10%);
+      bottom: 0;
+      left: 300px;
+      animation: title-appear 1s ease-out 500ms forwards;
+  }
+
+};
+
+.play-pause{
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  text-align: right;
+  font-size:28px;
+  color: lighten($color3, 10%);
+  bottom: 0;
+  left: 300px;
+  animation: title-appear 1s ease-out 500ms forwards;
+}
+
+
+.menu-trigger {
+  background: #ffffff;
+  border-radius: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  vertical-align: middle;
+  transition: box-shadow 0.4s ease;
+  margin-left: auto; /* Strictly for positioning */
+}
+
+.menu-trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger span {
+  font-weight: 700;
+  vertical-align: middle;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.menu-trigger img {
+  border-radius: 90px;
+}
+
+.menu {
+  background: #ffffff;
+  border-radius: 8px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 300px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #dddddd;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  padding: 15px 20px;
+  display: block;
+}

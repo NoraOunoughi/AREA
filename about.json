@@ -1,0 +1,118 @@
+{
+    "client": {
+        "host": "????????"
+    },
+    "server": {
+        "current_time": 1531680780,
+        "services": [{
+            "name": "weather",
+            "actions": [{
+                "name": "UvIndex",
+                "description": "Uv index change in city changed",
+                "args": [{
+                    "argName": "City"
+                }]
+            }, {
+                "name": "Temperature",
+                "description": "Temperature in city changed",
+                "args": [{
+                    "argName": "City"
+                }]
+            }, {
+                "name": "Weather ",
+                "description": "Weather in a city changed",
+                "args": [{
+                    "argName": "City"
+                }]
+            }],
+            "isNotOauth": true
+        }, {
+            "name": "github",
+            "actions": [{
+                "name": "Repos",
+                "description": "User has a new repository"
+            }, {
+                "name": "Followers",
+                "description": "User gets a new Follower"
+            }],
+            "reactions": [{
+                "name": "Block",
+                "description": "Block  a user",
+                "args": [{
+                    "argName": "Username"
+                }]
+            }, {
+                "name": "Follow",
+                "description": "Follow a user",
+                "args": [{
+                    "argName": "Username"
+                }]
+            }, {
+                "name": "CreateRepo",
+                "description": "Create a repository",
+                "args": [{
+                    "argName": "Repository Name"
+                }]
+            }]
+        }, {
+            "name": "spotify",
+            "actions": [{
+                "name": "Artists",
+                "description": "User follow a new artist"
+            }],
+            "reactions": [{
+                "name": "CreatePlaylist",
+                "description": "Create a new Playlist",
+                "args": [{
+                    "argName": "Playlist Name"
+                }]
+            }]
+        }, {
+            "name": "sg",
+            "reactions": [{
+                "name": "AutomatedEmail",
+                "description": "Send an automated email to user"
+            }],
+            "isNotOauth": true
+        }, {
+            "name": "gmail",
+            "actions": [{
+                "name": "Mails",
+                "description": "New email in inbox"
+            }],
+            "reactions": [{
+                "name": "SendMail",
+                "description": "Send Email to someone",
+                "args": [{
+                    "argName": "Recipient"
+                }, {
+                    "argName": "Message"
+                }, {
+                    "argName": "Subject"
+                }]
+            }]
+        }, {
+            "name": "youtube",
+            "actions": [{
+                "name": "Channels",
+                "description": "Get user's subscribed channels"
+            }, {
+                "name": "Playlist",
+                "description": "Get user's playlist"
+            }]
+        }, {
+            "name": "discord",
+            "actions": [{
+                "name": "Servers",
+                "description": "User is in a new Server"
+            }],
+            "reactions": [{
+                "name": "ChangeUsername",
+                "description": "Change user name",
+                "args": [{
+                    "argName": "Username"
+                }]
+            }]
+        }]
+    }
+}

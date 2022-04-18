@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "851421718570",
+    "firebase_url": "https://area-potter-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "area-potter",
+    "storage_bucket": "area-potter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851421718570:android:46bcd1c57fdac651c9bb53",
+        "android_client_info": {
+          "package_name": "com.area.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851421718570-7rehdqjbr35266q817dte1smebmtqa10.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.area.app",
+            "certificate_hash": "eab7b352f5de9929e77c456489ffa44612d4da2c"
+          }
+        },
+        {
+          "client_id": "851421718570-ieoum9q2ip9qlivdpqn2hnnoo4i429l3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.area.app",
+            "certificate_hash": "9dd626b2911d12f450a94f452297771e98023493"
+          }
+        },
+        {
+          "client_id": "851421718570-kish95ngbqt53pqlrbf2v6fna79laoi7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.area.app",
+            "certificate_hash": "6b968cd93796f5167d75e7dda788cb2000582283"
+          }
+        },
+        {
+          "client_id": "851421718570-hg45uvf78pjvavk3vk715skn3degqu9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBuQzQmbypEJhWvaI6bSZ42sKa6qW2NDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851421718570-hg45uvf78pjvavk3vk715skn3degqu9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

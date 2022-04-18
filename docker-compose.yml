@@ -1,0 +1,58 @@
+version: "3.9"
+
+services:
+    server:
+        build:
+            context: ./server/
+        ports:
+            - 8080:8080
+        environment:
+            - NODE_ENV=development
+            - CHOKIDAR_USEPOLLING=true
+        networks:
+            - server-tier
+        volumes:
+            - ./about.json:/server/about.json
+
+    client_web:
+        build:
+            context: ./client/
+        depends_on:
+            - client_mobile
+            - server
+        ports:
+            - 8081:8081
+        environment:
+            - NODE_ENV=development
+            - CHOKIDAR_USEPOLLING=true
+        networks:
+            - server-tier
+        volumes:
+            - ./assets:/client/src/assets/
+            - ./apk_volume:/client/src/apk_volume
+
+    client_mobile:
+        build:
+            context: ./app/
+        volumes:
+            - ./assets:/client_mobile/assets/
+            - ./apk_volume:/apk_volume
+
+volumes:
+    my_apk_volume:
+        driver: local
+        driver_opts:
+            type: none
+            device: ./apk_volume
+            o: bind
+    assets_volume:
+        driver: local
+        driver_opts:
+            type: none
+            device: ./assets
+            o: bind
+
+
+networks:
+    server-tier:
+        driver: bridge
