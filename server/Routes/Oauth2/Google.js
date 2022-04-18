@@ -20,7 +20,7 @@ const port = config.port;
 
 router.get('/oauth2/authorize', (req, res) => {
     const scope = "https://mail.google.com/ https://www.googleapis.com/auth/youtube";
-    const clientId = "851421718570-hg45uvf78pjvavk3vk715skn3degqu9a.apps.googleusercontent.com";
+    const clientId = "";
     var from = req.query.from;
 
     var redirect_uri = from == 'mobile' ?
@@ -60,8 +60,6 @@ router.get('/oauth2/callback', async (req, res) => {
     const Redirect_URI = from == 'mobile' ?
         'http://' + servFromWebIp + ':' + port + '/google/oauth2/callback?from=mobile'
         : 'http://' + servFromWebIp + ':' + "8081" + '/google/callback';
-    const clientID = "851421718570-hg45uvf78pjvavk3vk715skn3degqu9a.apps.googleusercontent.com";
-    const clientSecret = "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";
 
     axios({
         method: 'post',
