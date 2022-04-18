@@ -26,7 +26,6 @@ router.get('/oauth2/authorize', function(req, res) {
     var from = req.query.from;
 
     var scope = 'user-read-private user-read-email user-library-modify playlist-modify-private playlist-modify-public user-read-currently-playing user-follow-modify user-follow-read';
-    const client_id = "91ae9b4f918d4a65ae6062c1fb067be6";
 
     // Ici on sait que la personne sur le callback vient du mobile ou du web
     // On peux changer la redirect_uri pour le web
@@ -75,9 +74,6 @@ router.get('/oauth2/callback', async(req, res) => {
     'http://' + servFromMobileIp + ':' + port + '/spotify/oauth2/callback?from=mobile'
     : 'http://' + servFromWebIp + ':' + "8081" + '/spotify/callback';
 
-    // App Spotify Infos
-    const client_id = "91ae9b4f918d4a65ae6062c1fb067be6";
-    const client_secret = "bcf2734667264f57b38325fb377059d4";
     const keyy = (client_id + ':' + client_secret).toString('base64');
     console.log(keyy)
     let key = client_id + ':' + client_secret;
@@ -110,8 +106,6 @@ router.get('/oauth2/callback', async(req, res) => {
 })
 
 router.get('/oauth2/refresh_token', function(req, res) {
-    const client_id = "91ae9b4f918d4a65ae6062c1fb067be6";
-    const client_secret = "bcf2734667264f57b38325fb377059d4";
     var refresh_token = req.body.refresh_token;
 
     axios({
