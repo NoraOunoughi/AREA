@@ -20,8 +20,6 @@ const port = config.port;
 
 router.get("/oauth2/authorize", function(req, res) {
     user = req.body.uid;
-    const cliend_id = "940639124304584744";
-    const scope = "guilds%20email%20identify";
     from = req.query.from;
     const redirect_uri = from == "mobile" ? 
     "http://" + servFromMobileIp + ":" + port + "/discord/oauth2/callback?from=mobile" :
@@ -50,10 +48,6 @@ router.get("/oauth2/callback", async function(req, res) {
     const redirect_uri = from == "mobile" ?
     "http://" + servFromMobileIp + ":" + port + "/discord/oauth2/callback?from=mobile" :
     "http://" + servFromWebIp + ":" + "8081" + "/discord/callback";
-
-    // App Discord Infos
-    const CLIENT_ID = '940639124304584744';
-    const CLIENT_SECRET = '0g92Fo5k1SI-md-6HSAEbsRM7-YNB1uU';
 
 
     let data = {
