@@ -8,7 +8,6 @@ const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestor
 router.use(cors());
 
 const db = getFirestore();
-const tok = "OTQwNjM5MTI0MzA0NTg0NzQ0.YgKUcw.gDfo0k8sW1P08NBhApikvJIqD-8";
 
 // const {RunReaction} = require('./Reaction')
 
