@@ -22,8 +22,8 @@ router.get('/oauth2/authorize', function(req, res) {
     user = req.body.uid
     const from = req.query.from;
     const clientId = from == "mobile" ?
-        "0ff8d62e7f0a2457ce40" :
-        "e993b956dd88f9b64d8a";
+        "" :
+        "";
     var scope = 'repo,user';
     redirect_uri = from == 'mobile' ?
     'http://' + servFromMobileIp + ':' + port + '/github/oauth2/callback?from=mobile'
@@ -57,11 +57,11 @@ router.get('/oauth2/callback', async(req, res) => {
     console.log("----" + code);
     const from = req.query.from;
     const clientID = from == "mobile" ?
-        "0ff8d62e7f0a2457ce40" :
-        "e993b956dd88f9b64d8a";
+        "" :
+        "";
     const clientSecret = from == "mobile" ?
-    "e80e631c875e0b796895f7f6e37459a27c221253" :
-    "b766ff31fe49599ba3f1c9e85c0f17e44a73f891";
+    "" :
+    "";
     var redirect_uri = '';
     redirect_uri = from == 'mobile' ?
     'http://' + servFromMobileIp + ':' + port + '/github/oauth2/callback?from=mobile'
